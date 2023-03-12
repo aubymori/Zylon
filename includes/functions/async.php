@@ -1,8 +1,6 @@
 <?php
 namespace Zylon\Async;
 
-use YukisCoffee\CoffeeRequest\Promise;
-
 /**
  * Declares an async function.
  * 

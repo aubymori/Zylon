@@ -1,5 +1,10 @@
 <?php
-if (isset($_GET["enable_polymer"]) && $_GET["enable_polymer"] != "0")
-{
-    \Zylon\SimpleFunnel::funnelCurrentPage(true);
-}
+use Zylon\Controller;
+
+Controller::route([
+    "get" => [
+        "default" => "ChannelController"
+    ]
+]);
+
+Controller::run();

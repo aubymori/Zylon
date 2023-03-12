@@ -1,8 +1,8 @@
 <?php
 namespace Zylon\Async\Concurrency;
 
-use YukisCoffee\CoffeeRequest\Promise;
 use Generator, Exception;
+use Zylon\Async\Promise;
 
 /**
  * Represents an async function in execution.
@@ -109,7 +109,9 @@ class AsyncFunction
         }
         else
         {
-            // Warn the user.
+            throw new \Exception(
+                "An async function must take in a Promise."
+            );
         }
     }
 

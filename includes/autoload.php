@@ -1,6 +1,5 @@
 <?php
-require "modules/functions/async.php";
-
+require "includes/functions/async.php";
 /**
  * Declare and install the autoloader.
  * 
